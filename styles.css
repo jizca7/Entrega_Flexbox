@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: black;
     color: white;
@@ -31,7 +37,7 @@ header{
 
 a{
     color: white;
-    text-decoration: wavy underline red;
+    text-decoration: wavy underline rgb(115, 2, 2);;
 }
 
 .menu {
@@ -39,7 +45,7 @@ a{
     width: 100px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
 
     header > nav{
         display: none;
@@ -76,16 +82,20 @@ div > a{
     align-items: flex-end;
     justify-content: space-around;
     flex-wrap: wrap;
-
+    width: 100%;
+    padding: 50px;
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: wavy underline rgb(115, 2, 2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(115, 2, 2);
 }
 
-@media (max-width: 540px) {
-    .section > a {
-        font-size: 30px;
-    }
-    .section {
-        width: 100%;
-        min-width: 0px;
+@media (max-width: 840px) {
+    .series{
+        display: none;
     }
 }
 
@@ -96,9 +106,8 @@ footer {
     width: 100%;
     position: fixed;
     justify-content: space-around;
-    padding: 50px;
+    padding: 100px;
     align-items: center;
-    flex-wrap: wrap;
     background-color: rgb(115, 2, 2);
 }
 
@@ -117,4 +126,9 @@ ul > li:first-child{
 ul > li:last-child{
     font-size: 15px;
     font-weight: lighter;
+}
+@media (max-width: 700px) {
+    footer{
+        display: none;
+    }
 }
